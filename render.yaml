@@ -1,0 +1,14 @@
+previews:
+  generation: automatic
+services:
+  - type: web
+    runtime: node
+    name: renderPreview
+    repo: https://github.com/Saty248/render-preview
+    buildCommand: "yarn build"
+    startCommand: "yarn start"
+    plan: free
+    branch: main
+    envVars:
+      - key: SERVER_URL
+        value: server
