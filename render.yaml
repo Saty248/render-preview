@@ -11,5 +11,6 @@ services:
     plan: free
     branch: test2
     envVars:
-      - key: SERVER_URL
-        value: server
+      - key: TEST_ENV
+        value: test_env_value
+      - fromGroup: renderPreview env test
