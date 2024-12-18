@@ -5,7 +5,8 @@ services:
     runtime: node
     name: renderPreview
     repo: https://github.com/Saty248/render-preview
-    buildCommand: "yarn build"
+    buildCommand: "yarn"
+    preDeployCommand: "yarn build"
     startCommand: "yarn start"
     plan: free
     branch: main
