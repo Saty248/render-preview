@@ -9,7 +9,7 @@ services:
     preDeployCommand: "yarn build"
     startCommand: "yarn start"
     plan: free
-    branch: main
+    branch: test3
     envVars:
       - key: TEST_ENV
         value: test_env_value
